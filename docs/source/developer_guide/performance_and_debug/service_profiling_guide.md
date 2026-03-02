@@ -164,7 +164,7 @@ curl http://localhost:8000/v1/completions \
 }' | python3 -m json.tool
 ```
 
-### 4. Analyze Data
+### 4. Analyze Data 
 
 ```bash
 # xxxx-xxxx is the directory automatically created based on vLLM startup time
@@ -190,6 +190,8 @@ After analysis, the `output` directory will contain:
 ---
 
 ### 6. Appendix related to MS Service Profiler
+
+(profiling-configuration-file)=
 
 #### 6.1 Profiling Configuration File
 
@@ -225,6 +227,10 @@ The configuration is in JSON format. Main parameters:
   "timelimit": 0
 }
 ```
+
+---
+
+(symbols-configuration-file)=
 
 #### 6.2 Symbols Configuration File
 
