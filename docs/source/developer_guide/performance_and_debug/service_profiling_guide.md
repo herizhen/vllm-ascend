@@ -76,7 +76,6 @@ curl http://localhost:8080/v1/completions \
     "temperature": 0
 }
 
-
 curl -X POST http://localhost:8080/stop_profile
 ```
 
