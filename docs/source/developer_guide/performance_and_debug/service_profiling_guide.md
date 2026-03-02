@@ -53,7 +53,7 @@ Performance collection is controlled by sending API requests. You can start coll
 Send the following request to start the profiling service:
 
 ```bash
-curl -X POST http://localhost:8080/start_profile​
+curl -X POST http://localhost:8080/start_profile
 ```
 
 Send the following request to stop the profiling service:
@@ -75,7 +75,7 @@ curl http://localhost:8080/v1/completions \
     "max_tokens": 7,
     "temperature": 0
 }
-​
+
 
 curl -X POST http://localhost:8080/stop_profile
 ```
