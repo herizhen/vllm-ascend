@@ -74,7 +74,7 @@ curl http://localhost:8080/v1/completions \
     "prompt": "San Francisco is a",
     "max_tokens": 7,
     "temperature": 0
-}
+}'
 
 curl -X POST http://localhost:8080/stop_profile
 ```
@@ -92,21 +92,21 @@ analyse("/vllm_profile/localhost.localdomain_XXXXXXXXXX_ascend_pt/")
 
 After analysis, the `*ascend_pt` directory will contain many files, with the main analysis focus being the `ASCEND_PROFILER_OUTPUT` folder. This directory will include the following files:
 
-- `analysis.db`:Performance data in database format
+- `analysis.db`: Performance data in database format
 
-- `api_statistic.csv`:API call statistics
+- `api_statistic.csv`: API call statistics
 
-- `ascend_pytorch_profiler_0.db`:Performance data in database format
+- `ascend_pytorch_profiler_0.db`: Performance data in database format
 
-- `kernel_details.csv`:Kernel-level related data
+- `kernel_details.csv`: Kernel-level related data
 
-- `operator_details.csv`:Operator-level related data
+- `operator_details.csv`: Operator-level related data
 
-- `op_statistic.csv`:Operator utilization data
+- `op_statistic.csv`: Operator utilization data
 
-- `step_trace_time.csv`:Scheduling data
+- `step_trace_time.csv`: Scheduling data
 
-- `trace_view.json`:Chrome tracing format data, can be opened with [MindStudio Insight](https://www.hiascend.com/document/detail/zh/mindstudio/81RC1/GUI_baseddevelopmenttool/msascendinsightug/Insight_userguide_0002.html)
+- `trace_view.json`: Chrome tracing format data, can be opened with [MindStudio Insight](https://www.hiascend.com/document/detail/zh/mindstudio/81RC1/GUI_baseddevelopmenttool/msascendinsightug/Insight_userguide_0002.html)
 
 [↑ Back to Top](#service-profiling-guide)
 
