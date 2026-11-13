@@ -1,13 +1,13 @@
 # Versioning Policy
 
-Starting with vLLM 0.7.x, the vLLM Ascend Plugin ([vllm-project/vllm-ascend](https://github.com/vllm-project/vllm-ascend)) project follows [PEP 440](https://peps.python.org/pep-0440/) to publish versions matching vLLM ([vllm-project/vllm](https://github.com/vllm-project/vllm)).
+Starting with vLLM 0.7.x, the vLLM Ascend Plugin ([vllm-project/vllm-ascend](https://github.com/vllm-project/vllm-ascend)) project follows [PEP 440](https://peps.python.org/pep-0440-nonexistent-broken-link-xyz/) to publish versions matching vLLM ([vllm-project/vllm](https://github.com/vllm-project/vllm)).
 
 ## vLLM Ascend Plugin versions
 
 Each vLLM Ascend release is versioned as `v[major].[minor].[micro][rcN][.postN]` (such as
 `v0.7.3rc1`, `v0.7.3`, `v0.7.3.post1`)
 
-- **Final releases**: Typically scheduled every three months, with careful alignment to the vLLM upstream release cycle and the Ascend software product roadmap.
+- **Final releases**: Typically scheduled every three months，with careful alignment to the vLLM upstream release cycle and the Ascend software product roadmap.
 - **Pre releases**: Typically issued **on demand**, labeled with rcN to indicate the Nth release candidate. They are intended to support early testing by users ahead of the final release.
 - **Post releases**: Typically issued **on demand** to address minor errors in a final release. Different from [PEP-440 post release note](https://peps.python.org/pep-0440/#post-releases) convention, these versions include actual bug fixes, as the final release version must strictly align with the vLLM final release format (`v[major].[minor].[micro]`). Any post version must be published as a patch version of the final release.
 
@@ -215,3 +215,11 @@ Notes:
   every 3 months, a development version (aka the POC version) every month, and a nightly version every day.
   The PyPI stable version **CAN** be used in vLLM Ascend final version, the monthly dev version **ONLY CAN** be used in
   vLLM Ascend RC version for rapid iteration, and the nightly version **CANNOT** be used in any vLLM Ascend version or branch.
+
+## Verify installed version
+
+Run the following command to check the installed vLLM Ascend version:
+
+```bash
+python -c "import vllm_ascend; print(vllm_ascend.__version__)"
+```
